@@ -27,13 +27,4 @@ class TestCase extends TestbenchTestCase
             LarapexChartsServiceProvider::class,
         ];
     }
-
-    // With this method I can use the facade instead of all class namespace
-    protected function getPackageAliases($app): array
-    {
-        return [
-            'FirstPackage' => \Polytics\LarapexCharts\Facades\LarapexChart::class
-        ];
-    }
-
 }

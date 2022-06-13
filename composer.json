@@ -29,10 +29,7 @@
         "laravel": {
             "providers": [
                 "Polytics\\LarapexCharts\\LarapexChartsServiceProvider"
-            ],
-            "aliases": {
-                "LarapexChart": "Polytics\\LarapexCharts\\Facades\\LarapexChart"
-            }
+            ]
         }
     }
 
