@@ -31,20 +31,23 @@ class LarapexChartsServiceProvider extends ServiceProvider
      */
     public function boot()
     {
+        /*
         $this->loadViewsFrom($this->packageBasePath('stubs/resources/views'), 'larapex-charts');
 
         $this->publishes([
             $this->packageBasePath('stubs/public') => public_path('vendor/larapex-charts')
         ], 'larapex-charts-apexcharts-script');
-
+        
         $this->publishes([
             $this->packageBasePath('stubs/resources/views') => resource_path('views/vendor/larapex-charts')
         ], 'larapex-charts-views');
+        */
 
         $this->publishes([
             $this->packageBasePath('config/larapex-charts.php') => base_path('config/larapex-charts.php')
         ], 'larapex-charts-config');
 
+        /*
         if (!$this->app->runningInConsole()) {
             // Publishing commands
             (new Filesystem)->copyDirectory(__DIR__.'/../stubs/Console/Commands', app_path('Console/Commands'));
@@ -52,6 +55,7 @@ class LarapexChartsServiceProvider extends ServiceProvider
             // Publishing stubs
             (new Filesystem)->copyDirectory(__DIR__.'/../stubs/stubs', base_path('stubs'));
         }
+        */
 
     }
 
